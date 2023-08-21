@@ -9,26 +9,7 @@ h1 {
     margin-right: 10px;
     position: relative;
     opacity: 0;
-
-    &::after{
-      content: ",";
-      position: absolute;
-    }
-
-    &:last-child::after{
-      display: none;
-    }
-    
-    @for $i from 1 through 6 {
-      &:nth-child(#{$i}) {
-        animation: appear 1s .5s * $i forwards; 
-        // animation-name: appear;
-        // animation-duration: 1s;
-        // animation-delay: .5s * $i;
-        // animation-fill-mode:forwards;
-      }
-    }
-
+    animation: appear 1s .5s forwards; 
   }
 
 }
